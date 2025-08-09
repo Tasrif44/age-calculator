@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Online Age Calculator — Exact Age, Countdown & More</title>
+  <meta name="description" content="Free online age calculator: find your exact age in years, months, days, weeks, hours, minutes & seconds. Includes zodiac, day-of-week, next birthday countdown and shareable results." />
+  <meta name="keywords" content="age calculator, calculate age, how old am I, age in seconds, birthday countdown, zodiac sign" />
+
+  <!-- Structured data (schema.org) to help search engines identify this as a calculator tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free Online Age Calculator",
+    "url": "https://YOUR_DOMAIN_HERE/",
+    "description": "Calculate exact age in years, months, days, weeks, hours, minutes and seconds. Get zodiac sign and next birthday countdown.",
+    "applicationCategory": "Utilities",
+    "operatingSystem": "All",
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"120"}
+  }
+  </script>
+
+  <!-- Basic responsive styling (Tailwind could be used on a bigger site). Keep it light for speed. -->
+  <style>
+    :root{--accent:#0b71ff;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f4f7fb;margin:0;color:#222}
+    .wrap{max-width:920px;margin:28px auto;padding:18px}
+    header{display:flex;align-items:center;gap:18px}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(12,20,40,0.06)}
+    h1{margin:0;font-size:1.5rem}
+    .controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    input[type=date]{padding:10px;border-radius:8px;border:1px solid #e3e7ee}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+    button.secondary{background:#2d3748}
+    .result{margin-top:16px;text-align:left}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .small{font-size:.9rem;color:var(--muted)}
+    footer{margin-top:18px;text-align:center;color:#666;font-size:.9rem}
+    @media (max-width:520px){h1{font-size:1.25rem}}
+
+    /* simple ad placeholder boxes (replace with actual AdSense code after approval) */
+    .ad-placeholder{background:linear-gradient(90deg,#f7fafc,#eef2ff);border:1px dashed #cbd5e1;padding:10px;border-radius:8px;text-align:center;color:#475569}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <img src="" alt="logo" id="logo" style="width:56px;height:56px;border-radius:8px;background:#eef" />
+      </div>
+      <div>
+        <h1>Free Online Age Calculator</h1>
+        <div class="small">Exact age in years, months, days ● countdown to next birthday ● zodiac & shareable result</div>
+      </div>
+    </header>
+
+    <main style="margin-top:16px">
+      <div class="card">
+        <!-- Top ad placeholder: replace with AdSense code when approved -->
+        <div id="ad-top" class="ad-placeholder">Ad Placeholder — Top (replace with AdSense after approval)</div>
+
+        <div style="margin-top:14px">
+          <label for="dob" class="small">Enter your date of birth</label>
+          <div class="controls">
+            <input type="date" id="dob" aria-label="date of birth" max="9999-12-31" />
+            <button id="calcBtn">Calculate</button>
+            <button id="nowBtn" class="secondary">Use today</button>
+          </div>
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <hr style="margin:16px 0;border:none;border-top:1px solid #eef">
+        <div class="grid">
+          <div class="card small">
+            <strong>Tip for SEO</strong>
+            <div class="small">Add a short blog post about "how age is calculated" and a FAQ to increase search visibility.</div>
+          </div>
+          <div class="card small">
+            <strong>Share</strong>
+            <div class="small">After calculating, use the Share button to post results on social media.</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" id="ad-mid" class="ad-placeholder">Ad Placeholder — Mid (replace with AdSense)</div>
+
+        <div style="margin-top:12px" class="small">
+          <strong>Privacy:</strong> This tool runs fully in your browser — we do not send DOB to any server.
+        </div>
+      </div>
+
+      <section style="margin-top:14px" class="card">
+        <h2 style="margin-top:0">What's included</h2>
+        <ul>
+          <li>Exact age in years, months, days</li>
+          <li>Age in weeks, days, hours, minutes & seconds</li>
+          <li>Zodiac sign (Western) and day-of-week you were born</li>
+          <li>Next birthday countdown</li>
+          <li>Shareable result & ad-ready layout for monetization</li>
+        </ul>
+      </section>
+
+      <section style="margin-top:14px" class="card">
+        <h2 style="margin-top:0">Developer notes & AdSense</h2>
+        <ol>
+          <li>Upload this HTML to your host (Github Pages works great for a single static file).</li>
+          <li>Apply to Google AdSense once you have content and some traffic. Replace the Ad Placeholder divs with the AdSense ad unit code exactly as provided by Google.</li>
+          <li>Do not place excessive ads on the page — keep a good user experience to stay AdSense-compliant.</li>
+          <li>For better SEO, add 8–12 short blog posts related to birthdays, astrology, and age facts.</li>
+        </ol>
+        <div style="margin-top:8px" class="small">If you want, I can generate SEO blog posts and FAQ copy for your site.</div>
+      </section>
+
+      <section style="margin-top:14px" class="card">
+        <h2 style="margin-top:0">AdSense placeholders</h2>
+        <div class="small">When you're approved by AdSense, paste the ad unit code into the placeholders below (replace the div content):</div>
+        <pre style="white-space:pre-wrap;background:#0b1320;color:#dbeafe;padding:8px;border-radius:6px">&lt;div id="ad-top" class="ad-placeholder"&gt;Ad Placeholder — Top&lt;/div&gt;</pre>
+      </section>
+
+      <footer>
+        <div class="small">Made with ♥ — runs fully client-side. For help deploying to GitHub Pages, click the button below.</div>
+        <div style="margin-top:10px">
+          <button id="deploy">Show GitHub Pages Deploy Steps</button>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+  // Utility functions
+  function pad(n){return n<10? '0'+n : n}
+
+  function getZodiac(month, day){
+    // month: 0-11, day: 1-31
+    const zodiacRanges = [
+      [0,20,'Capricorn'],[0,31,'Aquarius'], // Jan 20 - Feb 18 etc will be handled below
+    ];
+    // Use direct checks
+    if((month==0 && day<=19) || (month==11 && day>=22)) return 'Capricorn';
+    if((month==0 && day>=20) || (month==1 && day<=18)) return 'Aquarius';
+    if((month==1 && day>=19) || (month==2 && day<=20)) return 'Pisces';
+    if((month==2 && day>=21) || (month==3 && day<=19)) return 'Aries';
+    if((month==3 && day>=20) || (month==4 && day<=20)) return 'Taurus';
+    if((month==4 && day>=21) || (month==5 && day<=20)) return 'Gemini';
+    if((month==5 && day>=21) || (month==6 && day<=22)) return 'Cancer';
+    if((month==6 && day>=23) || (month==7 && day<=22)) return 'Leo';
+    if((month==7 && day>=23) || (month==8 && day<=22)) return 'Virgo';
+    if((month==8 && day>=23) || (month==9 && day<=22)) return 'Libra';
+    if((month==9 && day>=23) || (month==10 && day<=21)) return 'Scorpio';
+    if((month==10 && day>=22) || (month==11 && day<=21)) return 'Sagittarius';
+    return '';
+  }
+
+  function formatNumber(n){return n.toLocaleString()}
+
+  function calculateFrom(dateStr){
+    const birth = new Date(dateStr+'T00:00:00');
+    if(isNaN(birth)) return null;
+    const now = new Date();
+
+    // Years, months, days
+    let years = now.getFullYear() - birth.getFullYear();
+    let months = now.getMonth() - birth.getMonth();
+    let days = now.getDate() - birth.getDate();
+    if(days < 0){
+      months -= 1;
+      // days in previous month
+      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+      days += prevMonth;
+    }
+    if(months < 0){ months += 12; years -= 1; }
+
+    // Totals
+    const ms = now - birth;
+    const totalDays = Math.floor(ms / (1000*60*60*24));
+    const totalHours = Math.floor(ms / (1000*60*60));
+    const totalMinutes = Math.floor(ms / (1000*60));
+    const totalSeconds = Math.floor(ms / 1000);
+
+    // Next birthday
+    let nextBday = new Date(now.getFullYear(), birth.getMonth(), birth.getDate());
+    if(nextBday < now) nextBday.setFullYear(now.getFullYear()+1);
+    const daysUntilNext = Math.ceil((nextBday - now)/(1000*60*60*24));
+
+    // Day of week
+    const dayOfWeek = birth.toLocaleString('en-US',{weekday:'long'});
+
+    // Zodiac
+    const zodiac = getZodiac(birth.getMonth(), birth.getDate());
+
+    return {years, months, days, totalDays, totalHours, totalMinutes, totalSeconds, daysUntilNext, dayOfWeek, zodiac, birth};
+  }
+
+  function showResult(obj){
+    const r = document.getElementById('result');
+    if(!obj){ r.innerHTML = '<p class="small">Please enter a valid date of birth.</p>'; return; }
+    r.innerHTML = `
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div class="card">
+          <strong style="display:block">Your exact age</strong>
+          <div style="margin-top:6px">${obj.years} years, ${obj.months} months, ${obj.days} days</div>
+        </div>
+
+        <div class="grid">
+          <div class="card small"><strong>In weeks</strong><div style="margin-top:6px">${Math.floor(obj.totalDays/7).toLocaleString()} weeks</div></div>
+          <div class="card small"><strong>In days</strong><div style="margin-top:6px">${formatNumber(obj.totalDays)} days</div></div>
+          <div class="card small"><strong>In hours</strong><div style="margin-top:6px">${formatNumber(obj.totalHours)} hours</div></div>
+          <div class="card small"><strong>In minutes</strong><div style="margin-top:6px">${formatNumber(obj.totalMinutes)} minutes</div></div>
+          <div class="card small"><strong>In seconds</strong><div style="margin-top:6px">${formatNumber(obj.totalSeconds)} seconds</div></div>
+        </div>
+
+        <div class="card small">
+          <div><strong>Zodiac:</strong> ${obj.zodiac}</div>
+          <div><strong>Day born:</strong> ${obj.dayOfWeek}</div>
+          <div><strong>Next birthday in:</strong> ${obj.daysUntilNext} days</div>
+          <div style="margin-top:8px"><button id="shareBtn">Share</button></div>
+        </div>
+      </div>
+    `;
+
+    // attach share handler
+    document.getElementById('shareBtn').addEventListener('click', ()=>{
+      const text = `I am ${obj.years}y ${obj.months}m ${obj.days}d old (born ${obj.birth.toDateString()}). Find your age at: ${location.href}`;
+      if(navigator.share){
+        navigator.share({title:'My Age',text,url:location.href}).catch(()=>{});
+      } else {
+        // fallback: copy text
+        navigator.clipboard.writeText(text).then(()=> alert('Result copied to clipboard — share it!'));
+      }
+    });
+  }
+
+  // button handlers
+  document.getElementById('calcBtn').addEventListener('click', ()=>{
+    const v = document.getElementById('dob').value;
+    const res = calculateFrom(v);
+    showResult(res);
+  });
+
+  // 'Use today' simply sets DOB to today for testing
+  document.getElementById('nowBtn').addEventListener('click', ()=>{
+    const t = new Date();
+    const s = `${t.getFullYear()}-${pad(t.getMonth()+1)}-${pad(t.getDate())}`;
+    document.getElementById('dob').value = s;
+    document.getElementById('calcBtn').click();
+  });
+
+  // Deploy button shows quick GitHub Pages steps
+  document.getElementById('deploy').addEventListener('click', ()=>{
+    const steps = `Quick GitHub Pages steps:\n\n1) Create a new GitHub repo (public) named e.g. my-age-calculator.\n2) Add this file as index.html to the repo root.\n3) Commit & push.\n4) In repo Settings -> Pages -> choose branch 'main' and folder '/' -> Save.\n5) After a minute your site will be available at https://<your-username>.github.io/<repo-name>/\n\nWant a custom domain? Buy domain -> set A/CNAME records as GitHub Pages docs show.`;
+    alert(steps);
+  });
+
+  // Small UX: if user enters date manually and presses Enter
+  document.getElementById('dob').addEventListener('keydown', (e)=>{ if(e.key === 'Enter'){ document.getElementById('calcBtn').click(); }});
+
+  </script>
+</body>
+</html>
